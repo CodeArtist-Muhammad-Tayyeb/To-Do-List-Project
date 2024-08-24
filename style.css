@@ -208,7 +208,7 @@ ul li span:hover{
 }
 
 /* For mobile devices */
-@media (max-width: 360px) {
+@media (max-width: 460px) {
     .todo-app {
         max-width: 95%;
         padding: 20px 18px;
