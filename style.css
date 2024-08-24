@@ -208,7 +208,7 @@ ul li span:hover{
 }
 
 /* For mobile devices */
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     .todo-app {
         max-width: 95%;
         padding: 20px 18px;
@@ -262,35 +262,7 @@ ul li span:hover{
     }
 }
 
-@media screen and (device-width: 360px) and (min-device-height: 540px) and (-webkit-device-pixel-ratio: 3) {
-    .container{
-        width: 110%;
-        height: 111vh;
-        background: linear-gradient(to right, #2E3192, #1BFFFF ) !important;
-        padding: 10px;
-    }
-    .todo-app {
-        width: 100%;
-        padding: 20px 100px;
-        margin: 10px 0 0 10px;
-        max-height: 100vh;
-    }
-    h2 {
-        font-size: 24px;
-    }
-    button {
-        padding: 7px 8px;
-    }
-    ul li {
-        font-size: 14px;
-        padding: 16px 30px 10px 43px;
-    }
-    ul li span {
-        font-size: 18px;
-        height: 30px;
-        width: 30px;
-    }
-}
+@
 
 
 
