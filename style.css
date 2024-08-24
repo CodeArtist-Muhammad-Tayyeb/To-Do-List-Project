@@ -179,7 +179,97 @@ ul li span:hover{
     background: #0086e6;
 }
 
+/* Responsive Styles */
 
+/* For tablets (portrait) */
+@media (max-width: 768px) {
+    .todo-app {
+        max-width: 90%;
+        padding: 30px 20px;
+        margin: 60px auto 20px;
+    }
+
+    .row input {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 15px 40px;
+    }
+
+    ul li {
+        font-size: 15px;
+        padding: 10px 8px 10px 40px;
+    }
+
+    ul li span {
+        font-size: 20px;
+        height: 35px;
+        width: 35px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .todo-app {
+        max-width: 95%;
+        padding: 20px 15px;
+        margin: 40px auto 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .row input {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 12px 30px;
+    }
+
+    ul li {
+        font-size: 14px;
+        padding: 8px 6px 8px 30px;
+    }
+
+    ul li span {
+        font-size: 18px;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+/* For laptops and desktops */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .todo-app {
+        max-width: 70%;
+        padding: 35px 25px;
+    }
+
+    .row input {
+        padding: 25px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 16px 45px;
+    }
+
+    ul li {
+        font-size: 16px;
+        padding: 10px 8px 10px 45px;
+    }
+
+    ul li span {
+        font-size: 21px;
+        height: 38px;
+        width: 38px;
+    }
+}
 
 
 
