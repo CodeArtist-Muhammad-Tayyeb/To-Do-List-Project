@@ -208,12 +208,36 @@ ul li span:hover{
 }
 
 /* For mobile devices */
-@media (max-width: 360px) {
+@media (min-width: 360px) and (max-width: 700px){
     .todo-app {
+        max-width: 95%;
+        padding: 20px 12px;
+        margin: 10px 10px 0 10px;
+        max-height: 100vh;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .row {
         max-width: 100%;
-        /* min-width: 100%; */
-        padding: 20px 18px;
-        /* margin: 10px 0 0 10px; */
+        border: transparent;
+        font-size: 14px;
+    }
+    .row input {
+        max-width: 80%;
+        padding: 23px 25px;
+        border: none;
+        font-size: 14px;
+    }
+    button {
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 360px){
+    .todo-app {
+        max-width: 95%;
+        padding: 20px 12px;
+        margin: 10px 10px 0 10px;
         max-height: 100vh;
     }
     h2 {
@@ -221,13 +245,8 @@ ul li span:hover{
     }
     .row{
         border: none;
-        /* min-width: 20%; */
-
     }
     .row input {
-
-        /* min-width: 100%; */
-        /* padding: 10px 20px; */
         border: transparent;
         font-size: 14px;
     }
