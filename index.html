@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <title>To-Do List App</title>
     <link rel="icon" href="./assets/Blue Favicon.png">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="todo-app">
             <h2>To-Do List </h2>
-                <div class="row input-group">
-                    <input type="text" id="input-box" required> 
-                    <label for="">Add Your Text</label>
-                    <button onclick="addTask()">Add</button>
-                </div>
-                    <ul id="list-container">
-                    </ul>
-                    <p class="little-Intro">Design by <a href="#">Code-Artist</a></p>
+            <div class="row">
+                <input type="text" id="input-box" required>
+                <label for="task">Add Your Text</label>
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li>Task 1</li>
+                        <li>Task 2</li> -->
+            </ul>
+            <p class="little-Intro">Design by <a href="https://m-tayyeb-personal-portfolio.vercel.app/"
+                    target="_blank">Code-Artist</a></p>
         </div>
     </div>
 
-
-    <script src="./script.js"></script>
+    <script src="./script.js">
+    </script>
 </body>
+
 </html>
