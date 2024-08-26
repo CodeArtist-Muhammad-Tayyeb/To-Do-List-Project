@@ -25,7 +25,7 @@ listContainer.addEventListener('click', e => { // Arrow ftn
         e.target.parentElement.remove();
         savedData();
     }
-}, false);
+});
 
 function savedData(){
     localStorage.setItem('data', listContainer.innerHTML);
