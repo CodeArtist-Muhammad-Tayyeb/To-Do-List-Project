@@ -208,22 +208,31 @@ ul li span:hover{
 }
 
 /* For mobile devices */
-@media (max-width: 480px) {
+@media (max-width: 360px) {
     .todo-app {
-        max-width: 95%;
+        max-width: 100%;
+        /* min-width: 100%; */
         padding: 20px 18px;
-        margin: 10px 0 0 10px;
+        /* margin: 10px 0 0 10px; */
         max-height: 100vh;
     }
     h2 {
         font-size: 24px;
     }
+    .row{
+        border: none;
+        /* min-width: 20%; */
+
+    }
     .row input {
-        padding: 15px;
+
+        /* min-width: 100%; */
+        /* padding: 10px 20px; */
+        border: transparent;
         font-size: 14px;
     }
     button {
-        padding: 12px 30px;
+        padding: 10px 20px;
     }
     ul li {
         font-size: 14px;
@@ -262,7 +271,7 @@ ul li span:hover{
     }
 }
 
-@media screen and (device-width: 360px) and (min-device-height: 540px) and (-webkit-device-pixel-ratio: 3) {
+/* @media screen and (device-width: 360px) and (min-device-height: 540px) and (-webkit-device-pixel-ratio: 3) {
     .container{
         width: 110%;
         min-height: 111vh;
@@ -272,7 +281,7 @@ ul li span:hover{
     .todo-app {
         min-width: 100%;
         padding: 20px 100px;
-        /* margin: 10px 0 0 10px; */
+        margin: 10px 0 0 10px;
         max-height: 100vh;
     }
     h2 {
@@ -290,7 +299,12 @@ ul li span:hover{
         height: 30px;
         width: 30px;
     }
-}
+    .input-group{
+        width: 23%;
+        padding: 2px;
+        font-size: 12px;
+    }
+} */
 
 
 
