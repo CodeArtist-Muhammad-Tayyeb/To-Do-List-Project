@@ -8,13 +8,12 @@
     box-sizing: border-box;
     font-family: myFont;
 }
-.container{
+body{
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(to bottom, #2E3192, #1BFFFF );
     /* background: linear-gradient(to right, #D4145A, #FBB03B); */
     padding: 10px;
-
 }
 .todo-app{
     z-index: -1;
@@ -159,7 +158,6 @@ ul li span:hover{
     color: #0086e6;
 }
 
-
 .little-Intro{
     color: #ffff;
     text-align: center;
@@ -179,6 +177,29 @@ ul li span:hover{
     border: 1px solid #edeef0;
     background: #0086e6;
 }
+
+.darkMode{
+    background: linear-gradient(to right, #D4145A, #FBB03B);
+    color: #fff;
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+}
+.togglemode{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+}
+.togglemode:hover{
+    transform: scale(1.10);
+}
+
 
 /* Responsive Styles */
 /* For tablets (portrait) */
@@ -287,11 +308,4 @@ ul li span:hover{
         width: 38px;
     }
 }
-
-
-
-
-
-
-
 

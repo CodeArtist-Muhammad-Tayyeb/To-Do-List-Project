@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,24 +9,27 @@
     <link rel="icon" href="./assets/Blue Favicon.png">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="todo-app">
-            <h2>To-Do List </h2>
-                <div class="row">
-                    <input type="text" id="input-box" required> 
-                    <label for="">Add Your Text</label>
-                    <button onclick="addTask()">Add</button>
-                </div>
-                    <ul id="list-container">
-                        <!-- <li>Task 1</li>
-                        <li>Task 2</li> -->
-                    </ul>
-                    <p class="little-Intro">Design by <a href="https://m-tayyeb-personal-portfolio.vercel.app/" target="_blank">Code-Artist</a></p>
+    <div class="todo-app">
+        <h2>To-Do List</h2>
+        <div class="row">
+            <input type="text" id="input-box" required>
+            <label for="">Add Your Text</label>
+            <button onclick="addTask()">Add</button>
         </div>
+        <ul id="list-container">
+            <!-- <li>Task 1</li>
+                <li>Task 2</li> -->
+        </ul>
+        <p class="little-Intro">Design by <a href="https://m-tayyeb-personal-portfolio.vercel.app/"
+                target="_blank">Code-Artist</a></p>
     </div>
+        <a class="togglemode" onclick="toggleDarkMode()"><img src="./assets/on-button.png" alt="Change-Theme" width="40px" title="Change-Theme"></a>
+
 
     <script src="./script.js">
     </script>
 </body>
+
 </html>
