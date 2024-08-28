@@ -12,9 +12,9 @@ body{
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(to bottom, #2E3192, #1BFFFF );
-    /* background: linear-gradient(to right, #D4145A, #FBB03B); */
     padding: 10px;
 }
+
 .todo-app{
     z-index: -1;
     width: 100%;
@@ -44,6 +44,7 @@ body{
     text-align: center;
 }
 
+/* Row => input, button */
 .row{
     display: flex;
     align-items: center;
@@ -91,13 +92,13 @@ body{
     border-radius: 3px;
     background: linear-gradient(to right, #0E53E6, #0091F9);
     border: 1.2px solid #edeef0;
-
 }
+
+/* Row => Button */
 button{
     border: 3px solid transparent;
     color: #edeef0;
     outline: none;
-    /* background: #0091F9; */
     background: transparent;
     padding: 18px 50px;
     border-top-right-radius: 30px;
@@ -111,6 +112,7 @@ button:hover{
     background: transparent;
 }
 
+/* Ul and Li add throught function */
 ul li{
     list-style: none;
     font-size: 17px;
@@ -119,7 +121,6 @@ ul li{
     cursor: pointer;
     position: relative;
     color: #edeef0;
-
 }
 ul li::before{
     content: '';
@@ -132,7 +133,6 @@ ul li::before{
     background-position: center;
     top: 12px;
     left: 8px;
-    
 }
 ul li.checked{
     color: #edeef0;
@@ -141,7 +141,6 @@ ul li.checked{
 ul li.checked::before{
     background-image: url(./assets/Offwhite-checked.png);
 }
-
 ul li span{
     position: absolute;
     right: 0;
@@ -158,12 +157,12 @@ ul li span:hover{
     color: #0086e6;
 }
 
+/* Design by Code Artist */
 .little-Intro{
     color: #ffff;
     text-align: center;
     margin-top: 30px;
     cursor: pointer;
-
 }
 .little-Intro a{
     text-decoration: none;
@@ -178,6 +177,7 @@ ul li span:hover{
     background: #0086e6;
 }
 
+/* Dark Mode */
 .darkMode{
     background: linear-gradient(to right, #D4145A, #FBB03B);
     color: #fff;
@@ -199,7 +199,6 @@ ul li span:hover{
 .togglemode:hover{
     transform: scale(1.10);
 }
-
 
 /* Responsive Styles */
 /* For tablets (portrait) */
@@ -232,32 +231,7 @@ ul li span:hover{
 }
 
 /* For mobile devices */
-/* @media (min-width: 360px) and (max-width: 700px){
-    .todo-app {
-        max-width: 95%;
-        padding: 20px 12px;
-        margin: 10px 10px 0 10px;
-        max-height: 100vh;
-    }
-    h2 {
-        font-size: 24px;
-    }
-    .row {
-        max-width: 100%;
-        border: transparent;
-        font-size: 14px;
-    }
-    .row input {
-        padding: 23px 25px;
-        border: none;
-        font-size: 14px;
-    }
-    button {
-        padding: 10px 20px;
-    }
-} */
 @media (max-width: 460px){
-
     .todo-app {
         max-width: 95%;
         padding: 20px 12px;
@@ -268,7 +242,6 @@ ul li span:hover{
         font-size: 24px;
     }
     .row{
-
         border: none;
     }
     .row input {
