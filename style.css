@@ -204,6 +204,7 @@ ul li span:hover{
 /* Responsive Styles */
 /* For tablets (portrait) */
 @media (max-width: 768px) {
+
     .todo-app {
         max-width: 97%;
         padding: 30px 20px;
@@ -211,6 +212,7 @@ ul li span:hover{
         padding: 30px 80px;
         max-height: 100vh;
     }
+
     .row input {
         padding: 20px;
         font-size: 14px;
@@ -230,7 +232,7 @@ ul li span:hover{
 }
 
 /* For mobile devices */
-@media (min-width: 360px) and (max-width: 700px){
+/* @media (min-width: 360px) and (max-width: 700px){
     .todo-app {
         max-width: 95%;
         padding: 20px 12px;
@@ -253,8 +255,9 @@ ul li span:hover{
     button {
         padding: 10px 20px;
     }
-}
-@media (max-width: 360px){
+} */
+@media (max-width: 460px){
+
     .todo-app {
         max-width: 95%;
         padding: 20px 12px;
@@ -265,14 +268,22 @@ ul li span:hover{
         font-size: 24px;
     }
     .row{
+
         border: none;
     }
     .row input {
-        border: transparent;
-        font-size: 14px;
+        width: 50%;
+        outline: none;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        user-select: none;
+        background: #edeef0;
+        color: #2E3192;
+        transition: all 0.3s;
+        border: none;
     }
     button {
-        padding: 10px 20px;
+        padding: 0 15px;
     }
     ul li {
         font-size: 14px;
