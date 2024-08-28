@@ -27,6 +27,8 @@ listContainer.addEventListener('click', e => { // Arrow ftn
     }
 });
 
+
+
 function savedData(){
     localStorage.setItem('data', listContainer.innerHTML);
 }
@@ -48,3 +50,9 @@ function showMode() {
     }
 }
 showMode();
+
+inputBox.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        addTask();
+    }
+});
