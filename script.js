@@ -2,14 +2,14 @@ const inputBox = document.getElementById('input-box');
 const listContainer = document.getElementById('list-container');
 const body = document.body;
 
-function addTask(){
-    if(inputBox.value === ''){
-        alert('You must writing something!');
-    } else{
+function addTask() {
+    if (inputBox.value === '') {
+        alert('You must write something!');
+    } else {
         let li = document.createElement('li');
         li.innerHTML = inputBox.value;
-        listContainer.appendChild(li);
-
+        listContainer.insertBefore(li, listContainer.firstChild); // places li at the very beginning of listContainer, before any other items that might already be in the list.
+                                                                  // The last task will be first of li.
         let span = document.createElement('span');
         span.innerHTML = '\u00d7';
         li.appendChild(span);
@@ -17,6 +17,7 @@ function addTask(){
     inputBox.value = '';
     savedData();
 }
+
 listContainer.addEventListener('click', e => { // Arrow ftn
     if(e.target.tagName === 'LI'){
         e.target.classList.toggle('checked');
@@ -25,9 +26,8 @@ listContainer.addEventListener('click', e => { // Arrow ftn
         e.target.parentElement.remove();
         savedData();
     }
+    
 });
-
-
 
 function savedData(){
     localStorage.setItem('data', listContainer.innerHTML);
