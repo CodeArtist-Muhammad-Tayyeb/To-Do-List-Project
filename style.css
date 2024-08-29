@@ -249,6 +249,9 @@ ul li span:hover{
     h2 {
         font-size: 24px;
     }
+    .todo-task-adding-container{
+        height: 420px;
+    }
     .row{
         border: none;
     }
